@@ -29,6 +29,8 @@ jobs:
             targets: "MI-R3G JCG-AC860M NETGEAR-BZV MI-R3P R2100 RM2100 MSG1500 BELL-A040WQ"
     steps:
       - uses: actions/checkout@v4
+        name: checkout-repo
+
       - name: Prepare environment
         run: |
           sudo apt update
